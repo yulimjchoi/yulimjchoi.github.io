@@ -421,9 +421,11 @@
         <h3>Materials Science Knowledge Graph using MatSciBERT <span style="font-weight:500;color:var(--text-mute);font-size:.85rem">· with Sogang University</span></h3>
         <p class="ctx">Scientific NLP pipeline · Doccano annotation</p>
         <ul class="bul">
-          <li>Developed a Python-based preprocessing workflow for <strong>56 full-text XML materials-science papers</strong>, performing section-level parsing and sentence segmentation to generate structured inputs for Named Entity Recognition (NER) labeling.</li>
-          <li>Designed a domain-specific NER annotation framework for fluoride-battery research papers, applied to a <strong>4,622-sentence corpus</strong>, defining entity schema, span-boundary rules, and ambiguity-resolution guidelines to ensure consistent and scalable annotation.</li>
-          <li>Managed the Doccano annotation workflow to ensure consistent, scalable labeling.</li>
+          <li>Built a Python-based preprocessing workflow for <strong>56 full-text materials science XML papers<strong>, performing section-level parsing, text normalization, and sentence segmentation to generate a structured <strong>4,622-sentence corpus<strong> for Named Entity Recognition (NER).</li>
+          <li>Implemented data cleaning and deduplication for the NER corpus, <strong>reducing 18,488 text examples to 3,782 unique examples (79.5% reduction)<strong> prior to Doccano annotation.</li>
+          <li>Designed a domain-specific NER annotation framework for fluoride-ion battery literature, defining six entity categories and formalizing span-boundary, abbreviation, ambiguity-resolution, and non-overlap rules to standardize labeling.</li>
+          <li>Developed an <strong>end-to-end literature-to-annotation pipeline<strong> integrating API/XML acquisition, text cleaning, sentence-level chunking, and NER pre-annotation into Doccano-ready JSONL outputs.</li>
+          <li>Administered the Doccano annotation environment on a university server, managing dataset import/export, user access, annotation records, and SQLite database backups.</li>
         </ul>
       </div>
     </div>
